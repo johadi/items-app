@@ -17,7 +17,7 @@ const Card = ({ description, number, isChecked = false, handleClick }) => {
           className="card"
           style={{
             opacity: style.opacity,
-            transform: `translateY(${style.x}px) scale(${style.y}) rotateY(${style.z}deg)`
+            transform: `translateY(${style.x}px) scale(${style.y}) rotateX(${style.z}deg)`
           }}
         >
           <button onClick={() => handleClick(number)} disabled={!isChecked}>Link {number}</button> {description}
