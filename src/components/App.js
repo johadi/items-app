@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "../styles/App.css";
+import "../styles/app.css";
 import { items } from "../items/items";
 import Checkbox from "./Checkbox";
 import LinksView from "./LinksView";
@@ -19,7 +19,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <p className="help-text">
           Selecting an item will enable some boxes, based on condition, by
           vertically centering the corresponding box below
