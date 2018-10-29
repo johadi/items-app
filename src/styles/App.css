@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+  position: relative;
+  margin: 2rem 10rem 0 10rem;
+}
+
+.lists {
+  display: flex;
+  height: 70vh;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #8a92a1;
+}
+
+.card {
+  background-color: #50545d;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #e8e8e8;
+  height: 100px;
+  width: 100px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.card:hover {
+  background-color: #937e55;
+  height: 105px;
+  width: 105px;
+}
+
+.card button {
+  width: inherit;
+  border: 0;
+  border-bottom: 1px solid;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  height: 30px;
+  background: #ffffff;
+  color: #50545d;
+  font-weight: bold;
+  transition: background 5s, transform 1s;
+}
+
+.card button:disabled {
+  background: #485d57;
+  color: #ffffff;
+  font-weight: normal;
+  opacity: 0.9;
+  transform: rotateY(360deg);
+}
+
+.regular-checkbox {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.regular-checkbox:active,
+.regular-checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.regular-checkbox:checked {
+  background-color: #e9ecee;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05),
+    inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+  color: #99a1a7;
+}
+
+.regular-checkbox:checked:after {
+  content: "\2714";
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #99a1a7;
+}
+
+.big-checkbox {
+  padding: 18px;
+}
+
+.big-checkbox:checked:after {
+  font-size: 28px;
+  left: 6px;
+}
+
+.checkbox-label {
+  position: relative;
+  bottom: 15px;
+}
+
+.items-wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  border: solid 2px #50545d;
+}
+
+.item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.item label {
+  color: #ffffff;
+  background-color: #50545d;
+  margin-left: 3px;
+  font-size: 11px;
+  padding: 1px 5px 4px 5px;
+  border-radius: 6px;
+}
+
+.help-text {
+  font-size: 12px;
+  font-weight: bold;
+}
