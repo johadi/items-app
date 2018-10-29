@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="app">
         <p className="help-text">
-          Selecting an item will enable some boxes, based on condition, by
+          Selecting an item will enable/disable some boxes, based on certain conditions, by
           vertically centering the corresponding box below
         </p>
         <div className="items-wrapper">
